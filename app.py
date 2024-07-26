@@ -72,8 +72,7 @@ if selected == "Detalles":
     dia.text("Sabado")
     hora.text("8:00 a 13:00 - 17:30 a 20:30")
     
-    st.subheader("Contacto")
-    st.text("📞 03815189918")
+    
     
     st.subheader("Instagram")
     st.markdown("Siguenos [aqui](https://www.instagram.com/saloncesaryerbabuena/) en Instagram")
@@ -148,6 +147,10 @@ if selected == "Reservar":
     
     enviar = st.button("Reservar")
     
+    st.text("SI QUERES CANCELAR EL TURNO, LLAMA A ESTE NUMERO")
+    st.text("📞 03815189918")
+    
+    
     if enviar:
         with st.spinner("Cargando..."): 
             
@@ -181,4 +184,5 @@ if selected == "Reservar":
             
             
             st.success("Su turno fue reservado con exito")    
+            
             
